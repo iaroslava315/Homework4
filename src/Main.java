@@ -23,6 +23,15 @@ public class Main {
         }
 
 
+        int speed = 59;
+        if (speed < 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
+        }
+        else {
+            System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф");
+        }
+
+
         }
 
 }
