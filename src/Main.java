@@ -1,7 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static <noSeats> void main(String[] args) {
+    public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
@@ -22,10 +22,10 @@ public class Main {
 
 
         int speed = 59;
-        if (speed < 60) {
-            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
-        } else {
+        if (speed >= 60) {
             System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
         }
 
 
@@ -60,14 +60,11 @@ public class Main {
         int passengers = 103;
         if (passengers <= 60) {
             System.out.println("В вагоне есть сидячее место");
-        }
-        else if (passengers > 60 && passengers <= 102) {
+        } else if (passengers > 60 && passengers <= 102) {
             System.out.println("В вагоне есть стоячее место");
-        }
-        else  {
+        } else {
             System.out.println("В вагоне мест нет");
         }
-
 
 
         int one = 15;
@@ -75,21 +72,13 @@ public class Main {
         int three = 3;
         if (one > two && one > three) {
             System.out.println(one);
-        }
-        else if (two > one && two > three) {
+        } else if (two > one && two > three) {
             System.out.println(two);
-        }
-        else {
+        } else {
             System.out.println(three);
         }
 
 
-
-
-
-
-
-
-        }
+    }
 
 }
