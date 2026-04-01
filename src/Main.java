@@ -1,38 +1,32 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static <noSeats> void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
         int age = 3;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
-        }
-        else {
+        } else {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
-
 
 
         int temperature = 10;
         if (temperature <= 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        }
-        else {
+        } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
-
 
 
         int speed = 59;
         if (speed < 60) {
             System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
-        }
-        else {
+        } else {
             System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф");
         }
-
 
 
         if (age >= 2 && age <= 6) {
@@ -52,7 +46,6 @@ public class Main {
         }
 
 
-
         if (age <= 5) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
         }
@@ -62,6 +55,22 @@ public class Main {
         if (age > 14) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения");
         }
+
+
+        int passengers = 103;
+        if (passengers <= 60) {
+            System.out.println("В вагоне есть сидячее место");
+        }
+        else if (passengers > 60 && passengers <= 102) {
+            System.out.println("В вагоне есть стоячее место");
+        }
+        else  {
+            System.out.println("В вагоне мест нет");
+        }
+
+
+
+
 
 
 
